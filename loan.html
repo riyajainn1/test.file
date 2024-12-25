@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>amount calculator</title>
+    <style>
+    body,html{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+
+    }
+    .container{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: beige;
+    }
+    .box{
+
+    }
+</style>
+</head>
+<body>
+    <h2>Loan calculator</h2>
+ <div class="container">
+    <div class="box">
+        loan amount:  <input id="principle"  type="number"> <br><br>
+        Interest rate:  <input id="interest"  type="number"> <br><br>
+        Months to Pay:  <input id="months"  type="number"> <br><br>
+        <button onclick="cal()">Calculate</button>
+    </div>
+ </div>
+
+  <script>
+    function cal(){
+        let p=parseInt(document.getElementById("principle").value);
+        let i=parseInt(document.getElementById("interest").value);
+        let t=parseInt(document.getElementById("months").value);
+        
+
+        let res=((p*i)/100+p);
+        let ans=res/t;
+        alert(ans);
+
+    }
+
+    8
+  </script>
+</body>
+</html>

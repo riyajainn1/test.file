@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR CODE</title>
+    <style>
+        body,html{
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        .container{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: beige;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .box{
+        background-color: chocolate;
+        padding: 50px;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>Generate Qr Code</h2>
+            <input type="text" placeholder="Text or Url" id="inputtext"><br><br>
+            <button onclick="generateqr()">Generate qr</button>
+        </div>
+        <div class="image">
+            <div id="img-qr">
+                <img src="" alt="" id="imgqr">
+
+            </div>
+        </div>
+    </div>
+    <script>
+        let inputtext =document.getElementById("inputtext");
+        let imgqr= document.getElementById("imgqr");
+        function generateqr(){
+            imgqr.src= "//api.qrserver.com/v1/create-qr-code/?size=150x150&data="  +inputtext.value; 
+
+        }
+    </script>
+</body>
+</html>

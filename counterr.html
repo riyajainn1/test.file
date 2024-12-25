@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COUNTER</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>COUNTER</h2>
+            <p id="text">0</p>
+            <button  onclick="incre()">Increament</button>
+            <button  onclick="decre()">Decreament</button>
+            <button  onclick="res()">RESET</button>
+          
+        </div>
+    </div>
+</body>
+<script>
+    let counter=0;
+    function incre(){
+        document.getElementById("text").innerHTML=++counter;
+
+    }
+    function decre(){
+        document.getElementById("text").innerHTML=--counter;
+
+    }
+    function res(){
+        document.getElementById("text").innerHTML=0;
+        counter=0;
+
+    }
+</script>
+</html>

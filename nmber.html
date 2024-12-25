@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUMBER GUESSING</title>
+    <style>
+        body,html{
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        .container{
+            height: 100%;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            background-color: #333;
+            padding: 50px;
+
+        }
+        button{
+            background-color: blue;
+            padding: 5px 20px;
+            border-radius: 20px;
+        }
+        button:hover{
+            background-color: white ;
+        }
+        p{
+            
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+    <h2>Guess the number</h2>
+    <div class="innerbox">
+        <input id="num1" type="number">
+        <button onclick="guess()">START</button>
+    </div>
+    
+            <p id="ans"></p>
+            <p  id="counter">Chances:</p>
+        </div>
+        
+    </div>
+    <script>
+        let riya= Math.floor(Math.random()*10);
+         let count=5;
+        function guess(){
+            count--;
+            
+            if(count<0){
+                return;
+            }
+            else{
+              
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            
+            let number=parseInt(document.getElementById("num1").value);
+            if( number==riya){
+               document.getElementById("ans") .innerHTML="YOU WON THE GAME";
+            }
+            else if(number<riya){
+                alert("guess higher number");
+            }
+            else {
+                alert("guess lower number");
+            }
+        }
+    </script>
+
+</body>
+</html>
